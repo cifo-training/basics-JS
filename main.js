@@ -25,6 +25,17 @@ function exercici2() {
 }
 // Exercici 3
 function exercici3() {
+  let cadena = prompt('Introduce una cadena de texto :');
+  let array = "a b c d f g h i j k l m n ñ o p q r s t u v w x y z A B C D E F G H Y J K L M N Ñ O P Q R S T U V W X Y Z".split(' ');
+  let muestra = array[Math.floor(Math.random() * array.length)];
+  if(cadena.includes(muestra)){
+    document.getElementById('text3').innerHTML = `El carácter ${muestra} SÍ está.`;
+  } else {
+    document.getElementById('text3').innerHTML = `El carácter ${muestra} NO está.`;
+  }
+}
+// Exercici 4
+function exercici4() {
   let population = 1000;
   let increaseTax = 0.02;
   let increaseNum = 50;
