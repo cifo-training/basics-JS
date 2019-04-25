@@ -12,8 +12,9 @@ while (rnd1 == 0) {
     }
 }
 var res=String.fromCharCode(rnd1);
-console.log(res);
-console.log("Hi han "+(n1.indexOf(res)+1)+" '"+res+"' en el text introduit");
+if (res>0){
+    console.log("true");  
+}else console.log("false");
 
 /*
 abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ
