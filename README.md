@@ -10,5 +10,9 @@ Si la cadena contè el caràcter retorna un missatge amb true sinò retorna fals
 
 Utilitza els mètodes prompt() i alert per demanar i mostrar els missatges.
 
+### Exercici 4
+Introducir un número mediante prompt() y devolver en un alert los años que quedan para la jubilación (Establecida en 67).
+
+
 ### Kata Growth of Population
 from CodeWars
