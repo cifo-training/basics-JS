@@ -12,6 +12,7 @@ let letterRandom = String.fromCharCode(numRandom);
 
 /* Comprobar si la cadena contiene la letra */
 
+
 alert(cadena.includes(letterRandom));
 
 
