@@ -22,7 +22,11 @@ Bartender. Crear un programa para que el usuario introduzca una bebida (leche, c
 ### Kata Growth of Population
 from CodeWars
 
-### Exercici 6: Nombres y entrada de datos
+
+### Exercici 6
+Imprime cada una de las letras de tu nombre en mayúsculas por la consola.
+
+### Exercici 7: Nombres y entrada de datos
 
 1. Crea una variable `driver1` con el nombre del *driver*
 
@@ -32,14 +36,14 @@ from CodeWars
 
 4. Imprime `"El nombre del navegador es YYYY"`
 
-### Exercici 7: Condicionales
+### Exercici 8: Condicionales
 
 5. Dependiendo de quién tenga el nombre más largo [is longer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length), imprime:
 	- `The Driver tiene el nombre más largo, tiene XX caracteres` o 
 	- `Yo, navegador tengo el nombre más largo, tiene XX caracteres` o
 	- `Vaya, ambos nombres son iguales, XX caracteres!!`
 
-### Exercici 8: Bucles
+### Exercici 9: Bucles
 
 6. Imprime todos los caracteres del nombre del  *driver*, separado por un espacio y en [mayúsculas](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
   ej.: `"R A U L"`
