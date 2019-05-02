@@ -1,5 +1,5 @@
-var palindrome=prompt('Introdueix el mot o expresio a evaluar:');
-var palindrome2='';
+let palindrome=prompt('Introdueix el mot o expresio a evaluar:');
+let palindrome2='';
 for (let index = palindrome.length-1; index >= 0; index--) {
     palindrome2 +=palindrome[index];   
 }
