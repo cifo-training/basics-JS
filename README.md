@@ -22,6 +22,11 @@ Bartender. Crear un programa para que el usuario introduzca una bebida (leche, c
 ### Kata Growth of Population
 from CodeWars
 
+### Exercicis bucles i condicions
+1. Fes un llistat de nombres de l'1 al 30
+2. Imprimeix el 10 i el 20 amb caràcters ('deu' i 'vint')
+3. Imprimeix al costat de cada nombre els literals 'parell'|'senar' segons correspongui
+4. Imprimeix els parells agrupats en primer lloc i desprès els senars.
 
 ### Exercici 6
 Imprime cada una de las letras de tu nombre en mayúsculas por la consola.
