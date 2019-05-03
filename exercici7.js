@@ -1,5 +1,15 @@
-let driver1='Node.js';
-console.log(`El nombre del driver es ${driver1}`)
-//let driver2=prompt('Introdueix el nom del navegador');
-let driver2=navigator.appName+'';
-console.log(`El nombre del navegador es ${driver2+' ('+navigator.appCodeName+')'}`)
+let driver1='Angelina';
+let driver2='Brad';
+
+//retorna el missatge del nom del driver
+function imprimirNomDriver(driver){
+    let msg=`El nom del driver es ${driver}`;
+    return msg;
+}
+//retorna el missatge del nombre del navegador
+function imprimirNomNavigator(navigator){
+    let msg=`El nom del navegador es ${navigator}`;
+    return msg;
+}
+console.log(imprimirNomDriver(driver1));
+console.log(imprimirNomNavigator(driver2));

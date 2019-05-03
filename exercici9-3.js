@@ -18,16 +18,18 @@ function contar_paraules(text) {
     //Contem els trossos de cadenas que hi han
     let numParaules = textEnParaules.length;
     //Mostrem el número de paraules
-    console.log(`Total paraules al text: ${numParaules}`);
+    return msg = (`Total paraules al text: ${numParaules}`);
 }
 function contar_repeticions(text, paraula) {
+    text = (' ' + text + ' ').toUpperCase();
+    paraula = paraula.toUpperCase();
     //Dividim el text per la paraula 
     let textEnParaules = text.split(' ' + paraula + ' ');
     //Contem els trossos de cadenas que hi han
     let numParaules = textEnParaules.length - 1;
     //Mostrem el número de repeticions
-    console.log(`La paraula \'${paraula}\' està repetida ${numParaules} vegades al text`);
+    return msg = (`La paraula \'${paraula}\' està repetida ${numParaules} vegades al text`);
 }
 textAdapt(mainText);
-contar_paraules(adaptedText);
-contar_repeticions((' ' + adaptedText + ' ').toUpperCase(), 'et'.toUpperCase());
+console.log(contar_paraules(adaptedText));
+console.log(contar_repeticions(adaptedText, 'et'));

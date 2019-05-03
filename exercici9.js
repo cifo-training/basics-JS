@@ -1,24 +1,34 @@
-let driver1='Node.js';
-let driver11='';
-driver1=driver1.toUpperCase();
-for (let index = 0; index < driver1.length; index++) {
-    driver11+=driver1[index]+' ';   
-}
-console.log(driver11);
-let driver2=navigator.appName+'';
-let driver21='';
-for (let index = driver2.length-1; index >= 0; index--) {
-    driver21 +=driver2[index];   
-}
-console.log(driver21);
+let driver1 = 'Carlos';
+let driver2 = 'Dani';
 
-driver2=driver2.toUpperCase();
-let names = [driver1, driver2];
-names.sort();
-lexMsg='Increíble! Ambos tenemos el mismo nombre?';
-if (names[0]!==driver2)
-    lexMsg='El nombre del driver va primero';
-else if (names[0]!==driver1)
-    lexMsg='Yo, el navigator voy primero';    
+function nombrarSeparadoEspacio(nom) {
+    let nouNom = '';
+    nom = nom.toUpperCase();
+    for (let index = 0; index < nom.length; index++) {
+        nouNom += nom[index] + ' ';
+    }
+    return nouNom;
+}
+console.log(nombrarSeparadoEspacio(driver1));
+function invertirNom(nom) {
+    let nouNom = '';
+    for (let index = nom.length - 1; index >= 0; index--) {
+        nouNom += nom[index];
+    }
+    return nouNom;
+}
+console.log(invertirNom(driver2));
 
-console.log(lexMsg);
+function longitudNombre(nom1, nom2) {
+    nom1=nom1.toUpperCase();
+    nom2=nom2.toUpperCase();
+    let names = [nom1, nom2];
+    names.sort();
+    lexMsg = 'Increíble! Ambos tenemos el mismo nombre?';
+    if (names[0] === nom1)
+        lexMsg = `El nombre del driver ${nom1} va primero`;
+    else if (names[0] === nom2)
+        lexMsg = `Yo, el navigator ${nom2} voy primero`;
+    return lexMsg;
+}
+console.log(longitudNombre(driver1, driver2));
