@@ -1,0 +1,28 @@
+<html>
+<head><title>palindromos</title>
+</head>
+<body>
+<script>
+function texto()
+{
+	let palabra=prompt("Escribe una palabra").toLowerCase();//la pasamos a minusculas
+ 
+	// eliminamos todos(g) los espacios en blanco
+	palabra=palabra.replace(/ /g, "");
+ 
+	for (let i=0;i<palabra.length;i++){
+		if(palabra[i]!=palabra[palabra.length-i-1]){
+			return false;
+		}
+	}
+	return true;
+}
+ 
+if(texto())
+{
+	alert("Esto es pal�ndromo");
+}else{
+	alert("Esto no es pal�ndromo")
+}
+</script>
+</body>

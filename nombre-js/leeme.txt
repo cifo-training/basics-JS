@@ -1,0 +1,2 @@
+Para ejecutarlo abrimos el terminal y tecleamos node nombre.js
+estando sobre el directorio donde se encuentra nombre.js
