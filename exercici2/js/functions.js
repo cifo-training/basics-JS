@@ -6,4 +6,7 @@ let juntos = nombre + " " + apellidos;
  function myFunction() {
   
     document.getElementById('pintar').innerHTML = "Hola" + " " + juntos;
+    if(juntos === 'null' | juntos === 'null', 'null'){
+        document.getElementById('pintar').innerHTML = "Hola desconocido!";
+    }
  } 
