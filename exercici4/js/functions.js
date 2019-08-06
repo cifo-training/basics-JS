@@ -18,6 +18,8 @@ document.getElementById('boton1').onClick = function(){
 function myFunction() { 
      document.getElementById('pintar').innerHTML = jubilado();
   } 
+  //por qué undefined?
+  //
 
 
 
