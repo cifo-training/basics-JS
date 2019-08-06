@@ -31,7 +31,7 @@ for (i=0; i < palabrasLength; i++){
 } 
    function myFunction() {
   
-    document.getElementById('pintar').innerHTML = randomPalabra;
+    document.getElementById('pintar').innerHTML = randomPalabra.toUpperCase();
 
 }
  
