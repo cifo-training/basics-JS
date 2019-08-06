@@ -15,9 +15,7 @@ document.getElementById('boton1').onClick = function(){
     myFunction();
 }
 
-function myFunction() {
-    
-     
+function myFunction() { 
      document.getElementById('pintar').innerHTML = jubilado();
   } 
 
