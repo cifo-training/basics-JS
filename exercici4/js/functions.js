@@ -4,6 +4,7 @@ let edadJubilacion = 67;
 let jubiladoYa = (edadJubilacion - edad);
 console.log(edad);
 
+
 function jubilado(){
     if(edad < edadJubilacion){
         alert("You need still" +" "+ jubiladoYa +" " +" to become a goverment employ!")
@@ -14,10 +15,10 @@ function jubilado(){
 document.getElementById('boton1').onClick = function(){
     myFunction();
 }
-
 function myFunction() { 
-     document.getElementById('pintar').innerHTML = jubilado();
-  } 
+    document.getElementById('pintar').innerHTML = jubilado();
+ } 
+
   //por qué undefined?
   //
 
