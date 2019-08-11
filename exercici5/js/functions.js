@@ -25,4 +25,10 @@ function addClassCheck(e){
         e.classList.remove("marked");
     }
 }
+function dataCheckBox(){
+    
+}
+function mayorEdad(){
+   //necesito recoger la data del checkbox primero
+}
 
