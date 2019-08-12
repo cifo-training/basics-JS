@@ -13,10 +13,18 @@ document.getElementById('boton1').onClick = function(){
     myFunction();
 }
 function myFunction() {
-    
+    let edadBebidas = prompt( " "+'How old you said you are?');
+    if( edadBebidas == ('')){
+        document.getElementById('pintar').innerHTML = ('no age, no drink!');
+    }else if( edadBebidas < ('18')){
+        document.getElementById('pintar').innerHTML = ('You could have Coca-cola or Milk.');
+    }else{
+        document.getElementById('pintar').innerHTML =('You are big enough to have' + " "+ bebidas + " "+' do enjoy it!');
+    }
      
-     document.getElementById('pintar').innerHTML = edad;
+     /* document.getElementById('pintar').innerHTML = bebidas; */
   } 
+  
 function addClassCheck(e){
     if(e.checked){
         e.classList.add("marked");
@@ -29,7 +37,14 @@ function addClassCheck(e){
         e.classList.remove("marked");
     }
 }
+
 function getValue(value){
+    //variable para evitar que salte el prompt al desmarcar casilla
+    // No es mia, let(var) realizada por Xabier Ayape
+    let marcados = document.getElementsByClassName("marked");
+        if(marcados.length == 0){
+    return;
+}
     let edadBebidas = prompt(value +" "+ "...um, ...let me see:"+ " "+'How old are you?');
     if( edadBebidas == ('')){
         alert('no age, no drink!');
@@ -40,6 +55,12 @@ function getValue(value){
     }
 }
 function getValue1(value){
+    //variable para evitar que salte el prompt al desmarcar casilla
+    // No es mia, let(var) realizada por Xabier Ayape
+    let marcados = document.getElementsByClassName("marked");
+        if(marcados.length == 0){
+    return;
+}
     let edadBebidas = prompt(value +" "+ "...um, ...let me see:"+ " "+'How old are you?');
     if( edadBebidas == ('')){
         alert('no age, no drink!');
@@ -50,6 +71,12 @@ function getValue1(value){
     }
 }
 function getValue2(value){
+     //variable para evitar que salte el prompt al desmarcar casilla
+    // No es mia, let(var) realizada por Xabier Ayape
+    let marcados = document.getElementsByClassName("marked");
+        if(marcados.length == 0){
+    return;
+}
     let edadBebidas = prompt(value +" "+ "...um, ...let me see:"+ " "+'How old are you?');
     if( edadBebidas == ('')){
         alert('no age, no drink!');
@@ -57,12 +84,7 @@ function getValue2(value){
         alert('Best thing to look after yourself!');
     }
 }
-function dataCheckBox(){
-    
-}
-function mayorEdad(){
-   //necesito recoger la data del checkbox primero
-}
+
 
 
 /*BIBLIOGRAFIA
