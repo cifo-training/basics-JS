@@ -14,6 +14,7 @@ document.getElementById('boton1').onClick = function(){
 }
 function myFunction() {
     let edadBebidas = prompt( " "+'How old you said you are?');
+    edadBebidas = parseInt(edadBebidas);
     if( edadBebidas == ('')){
         document.getElementById('pintar').innerHTML = ('no age, no drink!');
     }else if( edadBebidas < ('18')){
@@ -46,6 +47,7 @@ function getValue(value){
     return;
 }
     let edadBebidas = prompt(value +" "+ "...um, ...let me see:"+ " "+'How old are you?');
+    edadBebidas = parseInt(edadBebidas);
     if( edadBebidas == ('')){
         alert('no age, no drink!');
     }else if( edadBebidas < ('18')){
@@ -62,6 +64,7 @@ function getValue1(value){
     return;
 }
     let edadBebidas = prompt(value +" "+ "...um, ...let me see:"+ " "+'How old are you?');
+    edadBebidas = parseInt(edadBebidas);
     if( edadBebidas == ('')){
         alert('no age, no drink!');
     }else if( edadBebidas < ('16')){
@@ -78,6 +81,7 @@ function getValue2(value){
     return;
 }
     let edadBebidas = prompt(value +" "+ "...um, ...let me see:"+ " "+'How old are you?');
+    edadBebidas = parseInt(edadBebidas);
     if( edadBebidas == ('')){
         alert('no age, no drink!');
     }else{
@@ -94,4 +98,10 @@ Recogida datos check list y aparición prompt
 
 https://stackoverflow.com/questions/11599666/get-the-value-of-checked-checkbox
 respuesta: ZOE
+
+*******************
+parseInt 
+    Transformación string a numero
+
+ https://github.com/bcncodes-training/basics-JS/blob/master/jubilacion.js
 */
