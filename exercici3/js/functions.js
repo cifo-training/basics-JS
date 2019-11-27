@@ -1,4 +1,4 @@
-let texto = prompt('Introduce (broma geak) un "string", para el resto de los ciudadanos cuerdos, una cadena de texto, por favor');
+let texto = prompt('Introduce letras de la A a la Z');
 
 
  console.log(texto);
@@ -18,20 +18,18 @@ let palabrasLength = " ";
 
 let azarPalabra = Math.floor(Math.random()* palabras.length);
 
-let randomPalabra = palabras.substring(azarPalabra, azarPalabra+1);
-alert ( 'La siguiente palabra,'+" "+ randomPalabra.toUpperCase() + " " + 'aparece en el texto introducido');
-
  function azar(){
 // recorrido palabras pa generar el random
 for (i=0; i < palabrasLength; i++){
     document.getElementById('pintar').innerHTML = azar();
-    
+    console.log(azar);
 }
 
 } 
    function myFunction() {
-  
-    document.getElementById('pintar').innerHTML = randomPalabra.toUpperCase();
+    let randomPalabra = palabras.substring(azarPalabra, azarPalabra+1);
+    document.getElementById('pintar2').innerHTML = ( 'La letra introducida,'+" "+ randomPalabra.toUpperCase() + " " + 'aparece en el texto generado al azar');
+    document.getElementById('pintar1').innerHTML = randomPalabra.toUpperCase();
 
 }
 /* Finalmente he tenido que buscar el random en el prompt. pequeño descanso y quiero hacerlo con un random */

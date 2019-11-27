@@ -5,22 +5,25 @@ let jubiladoYa = (edadJubilacion - edad);
 console.log(edad);
 
 
-function jubilado(){
+/* function jubilado(){
     if(edad < edadJubilacion){
-        alert("You need still" +" "+ jubiladoYa +" " +" to become a goverment employ!")
+        return ("You need still" +" "+ jubiladoYa +" " +" to become a goverment employ!")
     }else{
-        alert("You are rather lucky,"+" "+ -jubiladoYa +" "+ "years enjoying your well earned peace of mind.")
+        return ("You are rather lucky,"+" "+ -jubiladoYa +" "+ "years enjoying your well earned peace of mind.")
     }
-}
-document.getElementById('boton1').onClick = function(){
-    myFunction();
-}
+};
+
 function myFunction() { 
     document.getElementById('pintar').innerHTML = jubilado();
- } 
-
-  //por qué undefined?
-  //
+ } ;
+ document.getElementById('boton1').onClick = function(){
+    myFunction();
+}; */
+ const myFunction = () =>{
+     edad < edadJubilacion ?
+     document.getElementById('pintar').innerHTML = (`You need still ${jubiladoYa}  to become a goverment employ!`):
+     document.getElementById('pintar').innerHTML = (`You are rather lucky ${-jubiladoYa} years enjoying your well earned peace of mind.`);
+ }
 
 
 

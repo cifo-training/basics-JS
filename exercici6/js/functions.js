@@ -3,7 +3,7 @@
 let x = prompt('Write your name dear friend.');
 
 
-function myFunction() {
+/* function myFunction() {
     
     if(x == ('')){
         document.getElementById('pintar').innerHTML = ('No name, no gain!');
@@ -14,6 +14,13 @@ function myFunction() {
      } 
   
 }
-console.log(x.toUpperCase() + " "+ " is a great name!");
+console.log(x.toUpperCase() + " "+ " is a great name!"); */
+
+const myFunction = () =>{
+     x == ('') ?
+    document.getElementById('pintar').innerHTML = ('No name, no gain!'):
+    document.getElementById('pintar').innerHTML = (x.toUpperCase() + " " +" press F12");
+};
+
 
 

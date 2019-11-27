@@ -1,27 +1,4 @@
-let texto = prompt('Introduce (broma geak) un "string", para el resto de los ciudadanos cuerdos, una cadena de texto, por favor');
 
-
- console.log(texto);
-
-
-// Debo generar YO el random y no cogerlo del string escrito en prompt
-
-//declaración de DONDE coge el string para generar el random
-
-let palabras = "ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
-// cuantos elementos quiero random
-let palabrasLength = " ";
-// donde coloco el valor de ese random
-
-
-let azarPalabra = Math.floor(Math.random()* palabras.length);
-
-let randomPalabra = palabras.substring(azarPalabra, azarPalabra+1);
-//comparamos los dos valores
-
-let compara = texto.includes(randomPalabra);
-
-alert ( 'La siguiente palabra,'+" "+ compara + " " + 'aparece en el texto introducido');
 
 /*  function azar(){
 // recorrido palabras pa generar el random
@@ -32,7 +9,26 @@ for (i=0; i < palabrasLength; i++){
 
 }  */
    function myFunction() {
-  
+    let texto = prompt('Introduce una palabra de la A a la Z').toLowerCase();
+
+    document.getElementById('pintar1').innerHTML = (`La letra inscrita es la ${texto}`);
+
+   // Debo generar YO el random y no cogerlo del string escrito en prompt
+   
+   //declaración de DONDE coge el string para generar el random
+   
+   let palabras = "ABCÇDEFGHIJKLMNOPQRSTUVWXTZabcçdefghiklmnopqrstuvwxyz";
+   // cuantos elementos quiero random
+  // let palabrasLength = " ";
+   // donde coloco el valor de ese random
+
+   let azarPalabra = Math.floor(Math.random()* palabras.toLowerCase().length);
+   
+   let randomPalabra = palabras.toLowerCase().substring(azarPalabra, azarPalabra+1);
+   document.getElementById('pintar2').innerHTML = (`La letra generada es la ${randomPalabra}`);
+   //comparamos los dos valores
+ 
+   let compara = texto.includes(randomPalabra);
     document.getElementById('pintar').innerHTML = compara;
 
 }
